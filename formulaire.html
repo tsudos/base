@@ -21,6 +21,18 @@
                         <option value="Homme">Homme</option>
                     </select>
                 </p>
+                   <!-- Datalist ecrit à notre place et ne nous permet pas de modification sans effacer à la main -->
+               <p>
+                    <label for="Categorie">choisir le type d'article :</label>
+                    <input list="Categorie" id="Categ" name="Categ" />
+                    <datalist id="Categorie">
+                        <option value="PC">
+                        <option value="CD">
+                        <option value="DVD">
+                        <option value="Livres">
+                        <option value="Autres">
+                    </datalist>
+                </p>
                 <p>
                     <label>Age : </label>
                     <input type="text" name="age" placeholder="tapez votre age !"/>
@@ -30,5 +42,23 @@
                 </P>        
         </fieldset>
     </form>
+    <form>
+            <p>
+                <input type="radio" id="pistache" name="parfum" value="la Pistache">
+                <label for="pistache">pistache</label>
+
+                <input type="radio" id="Café" name="parfum" value="le Café" checked>
+                <label for="Café">Café</label>
+
+                <input type="radio" id="Vanille" name="parfum" value="la Vanille">
+                <label for="Vanille">Vanille</label>
+
+                <input type="radio" id="Chocolat" name="parfum" value="le Chocolat">
+                <label for="Chocolat">Chocolat</label>
+            </p>
+            <p>
+                <button type="button" name="popup" value="infoParfum" onclick="popupParfum()">Afficher la case à cocher</button>
+            </p>
+        </form>
 </body>
 </html>
