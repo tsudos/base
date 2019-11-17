@@ -42,6 +42,7 @@
                 </P>        
         </fieldset>
     </form>
+    
     <form>
             <p>
                 <input type="radio" id="pistache" name="parfum" value="la Pistache">
@@ -60,5 +61,18 @@
                 <button type="button" name="popup" value="infoParfum" onclick="popupParfum()">Afficher la case à cocher</button>
             </p>
         </form>
+
+        <!--onSubmit="return" check()" ACTION="gagne.php"-->
+        <FORM NAME="Fcontact"  METHOD="post">
+                <TABLE>
+                    <TR><TD>Identifiant</TD><TD><INPUT TYPE="text" NAME="identite"/></TD></TR>
+                    <TR><TD>Nom</TD><TD><INPUT TYPE="text" NAME="lenom"/></TD></TR>
+                    <TR><TD>Promotion</TD><TD><INPUT TYPE="text" NAME="promotion"/></TD></TR>
+                    <TR><TD>adresse</TD><TD><INPUT TYPE="text" NAME="adr"/></TD></TR>
+                    <TR><TD>email</TD><TD><INPUT TYPE="text" NAME="Email"/></TD></TR>
+                    <TR><TD>téléphone</TD><TD><INPUT TYPE="text" NAME="tel"/></TD></TR>
+                </TABLE>
+                <INPUT TYPE="submit" name="envoyer" value="envoyer"/>
+            </FORM>
 </body>
 </html>
