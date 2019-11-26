@@ -1,0 +1,18 @@
+#pour les spiders/agents d'indexations
+#    User-agent : les user-agents sont les robots des moteurs de recherche, par exemple Googlebot pour Google ou Bingbot pour Bing.
+#    Disallow : disallow est l’instruction qui interdit aux user-agents l’accès à une url ou à un dossier.
+#    Allow : allow est une instruction qui autorise aux user-agents l’accès à une url placée dans un dossier interdit.
+#PAS DE SAUT DE LIGNE !!!
+#   exemple :
+#   fichier pour les robots du site http://www.adressedevotresite.com/
+# # Groupe 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+# # Groupe 2
+#User-Agent: * (autorise l’accès à tous les robots )
+#Disallow: /intranet/ (interdit l’exploration du dossier intranet)
+#Disallow: /login.php (interdit l’exploration de l’url http://www.adressedevotresite.com/login.php)
+#Allow: /*.css?* (autorise l’accès à toutes les ressources css)
+#Sitemap: http://www.adressedevotresite.com/sitemap_index.xml (lien vers le sitemap pour le référencement)
+#   ->Un sitemap est un plan de site au format XML / l’importance de la présence d’un sitemap est lié au constat suivant : si une URL de votre site internet est inaccessible par la racine ou via ses URL descendantes, les robots ne pourront pas la trouver et l’indexer.
+#   Pour conclure, si vous souhaitez avoir la maîtrise de l’indexation de votre site internet, la création d’un fichier robots.txt est indispensable. Si aucun fichier n’est présent, toutes les urls trouvées par les robots seront indexées et se retrouveront dans les résultats des moteurs de recherche.
