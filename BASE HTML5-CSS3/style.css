@@ -3,7 +3,7 @@
                     color : white;
                     font-size:20px;
                 }
-    
+                
             .btn {
                 text-decoration: none;
                 padding: 9px;
@@ -19,7 +19,6 @@
                 -webkit-box-shadow: 3px 3px 12px #95b3d7;
                 -moz-box-shadow: 3px 3px 12px #95b3d7;
             }
-    
     
             .btn:hover {
                 padding: 10px;
