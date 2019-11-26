@@ -16,3 +16,4 @@ Disallow: /nogooglebot/
 #Sitemap: http://www.adressedevotresite.com/sitemap_index.xml (lien vers le sitemap pour le référencement)
 #   ->Un sitemap est un plan de site au format XML / l’importance de la présence d’un sitemap est lié au constat suivant : si une URL de votre site internet est inaccessible par la racine ou via ses URL descendantes, les robots ne pourront pas la trouver et l’indexer.
 #   Pour conclure, si vous souhaitez avoir la maîtrise de l’indexation de votre site internet, la création d’un fichier robots.txt est indispensable. Si aucun fichier n’est présent, toutes les urls trouvées par les robots seront indexées et se retrouveront dans les résultats des moteurs de recherche.
+#DOC -> https://support.google.com/webmasters/answer/6062596?hl=fr
