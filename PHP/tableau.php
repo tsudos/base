@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Tableau PHP</title>
-
     <style type="text/css">
         body{
             background-color: #444444;
@@ -37,51 +36,48 @@
 </head>
 <body>
 
-   
- 
-<?php
-$tableau= array('jean','robert','bob','dylan');
+    <?php
+        $tableau= array('jean','robert','bob','dylan');
 
-print_r($tableau);
-echo "<br>";
+        print_r($tableau);
+        echo "<br>";
 
+        foreach ($tableau as $key => $value) {
+            echo "$key a $value<br>";
+        }
 
-foreach ($tableau as $key => $value) {
-    echo "$key a $value<br>";
-}
-echo "<br>";
-echo "<br>";
-echo "<br>";
-echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
 
+        $tableau= array(1=>'jean',2=>'robert',3=>'bob',4=>'dylan');
 
-$tableau= array(1=>'jean',2=>'robert',3=>'bob',4=>'dylan');
-
-print_r($tableau);
-echo "<br>";
+        print_r($tableau);
+        echo "<br>";
 
 
-foreach ($tableau as $key => $value) {
-    echo "$key a $value<br>";
-}
+        foreach ($tableau as $key => $value) {
+            echo "$key a $value<br>";
+        }
 
-echo "<br>";
-echo "<br>";
-echo "<br>";
-echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
 
-$tableau= array('#fonzy'=>'jean','#Barjot'=>'robert','#Drogon'=>'bob','#Razor'=>'dylan');
+        $tableau= array('#fonzy'=>'jean','#Barjot'=>'robert','#Drogon'=>'bob','#Razor'=>'dylan');
 
-print_r($tableau);
-echo "<br>";
+        print_r($tableau);
+        echo "<br>";
 
-echo "<table border='2'><thead><tr><th>#Joueur</th><th>Prénom Joueur</th></tr></thead><tbody>";
-foreach ($tableau as $key => $value) {
-    echo "<tr><td>$key</td><td>$value</td></tr>";
-}
+        echo "<table border='2'><thead><tr><th>#Joueur</th><th>Prénom Joueur</th></tr></thead><tbody>";
+        foreach ($tableau as $key => $value) {
+            echo "<tr><td>$key</td><td>$value</td></tr>";
+        }
 
-echo "</tbody></table>";
-?>
+        echo "</tbody></table>";
+    ?>
 
 
 
