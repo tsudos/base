@@ -6,6 +6,9 @@ html{
 }
 body{
     background-color: #444444;
+    /*background-image: url("exemple.png ou bien http://…");
+    background-attachment: fixed;  Le fond restera fixe / alors que pour "scroll": l'image de fond défile avec le texte (par défaut).
+    */
     color : red;
     font-size :25px;
     /*em relatif est mieux que px absolue pour l'internaute*/
