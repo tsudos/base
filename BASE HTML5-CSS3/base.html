@@ -21,27 +21,58 @@
         <link rel="stylesheet" href="style.css">
         <!--Pour du Style css interne-->
         <style>
-            
-
+        /*style dans html prioritaire sur le css dans un fichier style*/
             body{
-            color : grey;
+                color : grey;
+            }
+            span{
+                color : black;
             }
         </style>
-
     </head>
 
     <body>
-        <div id="mise_en_page">
-            <h1>Bonjour avec Filezilla</h1>
+        <div id="div1">
+            <h1>Bonjour avec <span>Filezilla</span></h1>
         </div>
-        <div id="tag">
-            <img src="" alt="image non visible suite erreur"></img>
-        </div>
-        <!--ceci est aussi possible
+        <!--ceci est aussi possible pour la sémantique du site
             <figure>
                 <img src="images/blocnotes.png" alt="Bloc-Notes" />
                 <figcaption>Le logiciel Bloc-Notes</figcaption>
             </figure>
         -->
+        <div  id="div2">
+            <ul>
+                <li class="souligne">souligne</li>
+                <li class="barre">barre</li>
+                <li class="ligne_dessus">ligne_dessus</li>
+                <li class="clignote">clignote</li>
+                <li class="gras">gras alors que le tag "strong" veux dire que les mots qu'il entoure, sont important</li>
+                <li class="italique">italique alors que le tag "em" veux dire que les mots qu'il entoure, sont important</li>
+                <li class="center">center</li>
+                <li class="justify">justify met le texte da chaque côté et modifie l'espace entre chaque mot justify justifyjustify justify justify justify justifyjustify justify justify justify justifyjustify justify justify justify justifyjustify justify justify</li>
+                <li class="right">right</li>
+                <li>pas d'effet=left</li>
+            </ul>
+        </div>
+        <div  id="div3">
+            <img src="" alt="image non visible suite erreur"></img>
+        </div>
+        <div id="div4">
+            <p><img src="image/gitssfond.png" class="imgFlotante" alt="image flottante"/></p><p> image flotante avec  :Git est ton ami, et il y a un monde énorme à appréhender.Ceci est le paragraphe, écrit à la suite de l'image et qui l'habillera car l'image est flottante.</p>
+            <p class="Both">Ceci est la suite et le paragraphe est écrit en dessous de l'image car on a fait un clear:both.</p>
+
+            <p><img src="image/gitssfond.png" class="imgFlotante" alt="image flottante"/></p><p>image flotante avec :Git est ton ami, et il y a un monde énorme à appréhender. Ceci est le paragraphe, écrit à la suite de l'image et qui l'habillera car l'image est flottante.</p>
+            <p>Ceci est la suite et le paragraphe est écrit du 1er paragraphe et qui habillera aussi l'image flottante.on a pas fait un clear:both.</p>
+            <p class="Both">attention à bien clear:Both sinon ça fait bizare</p>
+        </div>
+        <div id="div5">
+            <!--<p class="Both">attention à bien clear:Both sinon ça fait bizare</p>-->
+            <p><img src="image/CouleursCss.png" alt="liste des 16 couleurs du css-base" title="liste des 16 couleurs du css-base"/></p>
+        </div>
+        <div id="div6">
+                <!--<p class="Both">attention à bien clear:Both sinon ça fait bizare</p>-->
+                <p><a href="https://www.colorzilla.com/gradient-editor/" alt="generateur de couleurs graduées" title="colorzilla">generateur de couleurs graduées</a></p>
+            </div>
     </body>
 </html>
