@@ -1,9 +1,69 @@
+
+
+
 body{
-        background-color: #444444;
-        color : white;
-        font-size:20px;
+    background-color: #444444;
+    color : red;
+    font-size:2em;
+    /*em relatif est mieux que px absolue pour l'internaute*/
+
     }
-    
+
+/* 
+déclaration de police :
+    balise
+    {
+        font-family: police1, police2, police3, serif ("en dernier car par defaut);
+    }
+
+    liste dispo :
+        Arial ;
+        "Arial Black" ;
+        "Comic Sans MS" ;
+        "Courier New" ;
+        Georgia ;
+        Impact ;
+        "Times New Roman" ;
+        "Trebuchet MS" ;
+        Verdana.
+
+
+    sinon on fait télécharger le style de font à l'internaute  sur : https://www.fontsquirrel.com/
+    les formats et leur compatibilité :
+        .ttf: TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.
+        .eot: Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.
+        .otf: OpenType Font. Ne fonctionne pas sur Internet Explorer.
+        .svg: SVG Font. Le seul format reconnu sur les iPhones et iPads pour le moment.
+        .woff: Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.
+    avec le fichier à la racine ça donne :
+
+@font-face {
+    font-family: 'MaSuperPolice';
+    src:url('MaSuperPolice.eot') format('eot'),
+        url('MaSuperPolice.woff') format('woff'),
+        url('MaSuperPolice.ttf') format('truetype'),
+        url('MaSuperPolice.svg') format('svg');
+    }
+
+    pour une utilisation :
+
+h1 {
+    font-family: 'MaSuperPolice', Arial, serif;
+    }
+
+
+        et enfin par https://fonts.google.com/ avec 
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+puis pour une utilisation :
+
+h1 {
+    font-family: 'Bebas Neue', cursive, serif;
+    }
+
+
+    */
 .btn {
     text-decoration: none;
     padding: 9px;
