@@ -1,151 +1,158 @@
-html{
-    margin-top:-2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: -2em;
-}
-body{
-    background-color: #444444;
-    /*background-image: url("exemple.png ou bien http://…");
-    background-attachment: fixed;  Le fond restera fixe / alors que pour "scroll": l'image de fond défile avec le texte (par défaut).
-    background-repeat: no-repeat;
-    background-position: 30px 50px; ou bien avec ses valeurs combinable :
-    top: en haut ;
-    bottom: en bas ;
-    left: à gauche ;
-    center: centré ;
-    right: à droite.
+/*css de base*/
+    html{
+        margin-left: 1em;
+        margin-right: 1em;
 
-    ou bien en une seul super propriété :
-
-    background: url("exemple.png") fixed no-repeat top right, url("exemple2.png") fixed;;
-    */
-    color : red;
-    font-size :25px;
-    /*em relatif est mieux que px absolue pour l'internaute*/
-    margin: 0px;
     }
-h1{
-    color:red;
-    font-size:2em;
-}
-#div1{
-    background-color: #444149;
-}
-#div2{
-    background-color: #444409;
-}
-#div3{
-    background-color: #441449;
-}
-#div4{
-    background-color: #6F7579;
-    color : rgba(255, 255, 255, 0.74);
-    /*rgba pour l'opacité*/
-}
-#div5{
-    /* http://www.colorpicker.com pour trouver les couleurs hexadécimal*/
-    background-color: rgb(121, 136, 135);
-    color : rgba(255, 255, 255, 0.74);
-}
-#div6{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
-}
+/*background*/
+    body{
+        background-color: #444444;
+        /*background-image: url("exemple.png ou bien http://…");
+        background-attachment: fixed;  Le fond restera fixe / alors que pour "scroll": l'image de fond défile avec le texte (par défaut).
+        background-repeat: no-repeat;
+        background-position: 30px 50px; ou bien avec ses valeurs combinable :
+        top: en haut ;
+        bottom: en bas ;
+        left: à gauche ;
+        center: centré ;
+        right: à droite.
 
+        ou bien en une seul super propriété :
 
-/* 
-déclaration de police :
-    balise
-    {
-        font-family: police1, police2, police3, serif ("en dernier car par defaut);
+        background: url("exemple.png") fixed no-repeat top right, url("exemple2.png") fixed;;
+        */
+        color : red;
+        font-size :25px;
+        /*em relatif est mieux que px absolue pour l'internaute*/
+        margin: 0px;
+        }
+    h1{
+        color:red;
+        font-size:2em;
     }
-
-    liste dispo :
-        Arial ;
-        "Arial Black" ;
-        "Comic Sans MS" ;
-        "Courier New" ;
-        Georgia ;
-        Impact ;
-        "Times New Roman" ;
-        "Trebuchet MS" ;
-        Verdana.
-
-
-    sinon on fait télécharger le style de font à l'internaute  sur : https://www.fontsquirrel.com/
-    les formats et leur compatibilité :
-        .ttf: TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.
-        .eot: Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.
-        .otf: OpenType Font. Ne fonctionne pas sur Internet Explorer.
-        .svg: SVG Font. Le seul format reconnu sur les iPhones et iPads pour le moment.
-        .woff: Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.
-    avec le fichier à la racine ça donne :
-
-@font-face {
-    font-family: 'MaSuperPolice';
-    src:url('MaSuperPolice.eot') format('eot'),
-        url('MaSuperPolice.woff') format('woff'),
-        url('MaSuperPolice.ttf') format('truetype'),
-        url('MaSuperPolice.svg') format('svg');
+    #div1{
+        background-color: #444149;
     }
-
-    pour une utilisation :
-
-h1 {
-    font-family: 'MaSuperPolice', Arial, serif;
+    #div2{
+        background-color: #444409;
+    }
+    #div3{
+        background-color: #441449;
+    }
+    #div4{
+        background-color: #6F7579;
+        color : rgba(255, 255, 255, 0.74);
+        /*rgba pour l'opacité*/
+    }
+    #div5{
+        /* http://www.colorpicker.com pour trouver les couleurs hexadécimal*/
+        background-color: rgb(121, 136, 135);
+        color : rgba(255, 255, 255, 0.74);
+    }
+    #div6{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+    background: rgb(181,189,200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
     }
 
 
-        et enfin par https://fonts.google.com/ avec 
+/*déclaration de police :
+    balise{
+            font-family: police1, police2, police3, serif ("en dernier car par defaut);
+        }
 
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+        liste dispo :
+            Arial ;
+            "Arial Black" ;
+            "Comic Sans MS" ;
+            "Courier New" ;
+            Georgia ;
+            Impact ;
+            "Times New Roman" ;
+            "Trebuchet MS" ;
+            Verdana.
 
-puis pour une utilisation :
 
-h1 {
-    font-family: 'Bebas Neue', cursive, serif;
-    }
+        sinon on fait télécharger le style de font à l'internaute  sur : https://www.fontsquirrel.com/
+        les formats et leur compatibilité :
+            .ttf: TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs.
+            .eot: Embedded OpenType. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft.
+            .otf: OpenType Font. Ne fonctionne pas sur Internet Explorer.
+            .svg: SVG Font. Le seul format reconnu sur les iPhones et iPads pour le moment.
+            .woff: Web Open Font Format. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.
+        avec le fichier à la racine ça donne :
+
+    @font-face {
+        font-family: 'MaSuperPolice';
+        src:url('MaSuperPolice.eot') format('eot'),
+            url('MaSuperPolice.woff') format('woff'),
+            url('MaSuperPolice.ttf') format('truetype'),
+            url('MaSuperPolice.svg') format('svg');
+        }
+
+        pour une utilisation :
+
+    h1 {
+        font-family: 'MaSuperPolice', Arial, serif;
+        }
 
 
-    */
-.blink{
-        text-decoration: blink;
+        ou par https://fonts.google.com/ avec 
+
+    @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+        puis pour une utilisation :
+
+    h1 {
+        font-family: 'Bebas Neue', cursive, serif;
+        }
+
+
+        */
+
+/*position text*/
+    .blink{
+            text-decoration: blink;
+        }
+    h1, h3, .souligne{
+            text-decoration: underline;
+        }
+    .barre{
+            text-decoration: line-through;
+        }
+    .ligne_dessus{
+            text-decoration: overline;
+        }
+    .gras{
+        font-weight: bold;
+        }
+    .italique{
+        font-style: italic;
+        }
+    h3, .center{
+        text-align: center;
+        }
+    .justify{
+        text-align: justify;
+        }
+    .right{
+        text-align: right;
+        /*left par defaut*/
+        }
+
+/* liens */
+    a{color:rgba(255, 136, 135, 0.774);}
+
+/*image et paragraphe flotant*/
+    .imgFlotante{
+        width: 5em;
+        float: left;
     }
-.souligne{
-        text-decoration: underline;
+    .Both{
+        clear: both;
     }
-.barre{
-        text-decoration: line-through;
-    }
-.ligne_dessus{
-        text-decoration: overline;
-    }
-.gras{
-    font-weight: bold;
-    }
-.italique{
-    font-style: italic;
-    }
-.center{
-    text-align: center;
-    }
-.justify{
-    text-align: justify;
-    }
-.right{
-    text-align: right;
-    /*left par defaut*/
-    }
-.imgFlotante{
-    width: 5em;
-    float: left;
-}
-.Both{
-    clear: both;
-}
-a{color:rgba(255, 136, 135, 0.774);}
+
+/**/
