@@ -5,7 +5,7 @@
     }
 /*background*/
     body{
-        background-color: #444444;
+        background-color: #e6d8d8;
         /*background-image: url("exemple.png ou bien http://…");
         background-attachment: fixed;  Le fond restera fixe / alors que pour "scroll": l'image de fond défile avec le texte (par défaut).
         background-repeat: no-repeat;
@@ -55,6 +55,9 @@
     background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+    }
+    #div7{
+        background-color: rgb(146, 149, 151);
     }
 
 
@@ -155,3 +158,9 @@
     }
 
 /**/
+#div7 p {
+   color : #9C3354;
+   background: url('image/abstraitarbrefeuillebriselunesoleilnuit.jpg') no-repeat center;
+   height: 450px;
+   text-align: center;
+}
