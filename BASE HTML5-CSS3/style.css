@@ -157,10 +157,10 @@
         clear: both;
     }
 
-/**/
-#div7 p {
-   color : #9C3354;
-   background: url('image/abstraitarbrefeuillebriselunesoleilnuit.jpg') no-repeat center;
-   height: 450px;
-   text-align: center;
-}
+/*background image*/
+    #div7 p {
+    color : #9C3354;
+    background: url('image/abstraitarbrefeuillebriselunesoleilnuit.jpg') no-repeat center;
+    height: 450px;
+    text-align: center;
+    }
