@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Javascript</title>
+
+    <meta name="author" content="Stéphane DUFOUR" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+
+    <!--La balise Copyright pour protéger son site au besoin : <meta name="copyright" content="TsudWeb" />-->
+    <meta name="doc-rights" content="Copywritten Work">
+    <meta name="description" content="différent script javascript" />
+    <!--<meta name="generator" content="? Framework utilisé / CMS / ?" />-->
+
+    <!--Si on veut être indéxé sur les news google : <meta name="news_keywords" content="Base, HTML, CSS,...">-->
+    <meta name="google" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+
+    <meta name="language" content="Fr">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- <link rel="stylesheet" media="(min-width: 666px)" href="css/style_desktop.css" type="text/css"> -->
+    <!--<link rel="stylesheet" media="(min-width: 666px)" href="css/style_desktop_scroll.css" type="text/css">
+        <link rel="stylesheet" media="(max-width: 665px)" href="css/style_tab.css" type="text/css" />-->
+    <!-- <link rel="stylesheet" href="css/form.css" type="text/css">
+        <link rel="stylesheet" href="css/formMaps.css" type="text/css"> -->
+
+    <!--Pour du Style css interne-->
+    <style>
+        /*style dans html prioritaire sur le css dans un fichier style*/
+
+        @charset "utf-8";
+        /*CSS Document*/
+
+        /*viewport*/
+        @viewport {
+            width: device-width;
+            /* largeur du viewport */
+            zoom: 1;
+            /* zoom initial à 1.0  */
+        }
+
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        @-o-viewport {
+            width: device-width;
+        }
+
+        /* micro reset */
+        html,
+        body,
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*mise en place d'un patron de police pour changement de la taille en 1 fois !*/
+        html {
+            font-size: 18px;
+        }
+
+
+        .hidden {
+            display: none;
+        }
+
+        .bulle span {
+            display: none;
+        }
+
+        .bulle:hover span {
+            display: block;
+        }
+
+        button.bulle {
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px #0B120B;
+            border-radius: 5px;
+        }
+
+        button.bulle span {
+            display: none;
+        }
+
+        button.bulle:hover span {
+            left: 0vh;
+            top: 3vh;
+            width: 20vw;
+            padding: 1vw;
+            display: block;
+            position: absolute;
+            border: 2px black solid;
+            box-shadow: 0px 0px 2vh #0B120B;
+            background-color: rgb(2, 163, 163);
+            border-radius: 5px;
+            z-index: 999;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="Ma_Page">
+
+        <!--barre title & prez - nav -->
+        <!--utilisation de scriptText.js-->
+        <div id="title">
+            <p>Dufour Stéphane</br>Développeur Junior</p>
+            <span class="txt-rotate" data-period="2000" data-rotate='[ 
+                        "PHP 7/7.4",
+                        "Symfony 4/5",
+                        "Back-End"
+                        ]'></br>
+            </span>
+        </div>
+        <!--Fin utilisation de scriptText.js-->
+
+        <hr>
+
+        <!--Prez-->
+        <div id="prez">
+            <!--utilisation de scriptText.js-->
+            <div id="animation_prez">
+                <p>utilisation de scriptText.js</p>
+                <span class="txt-rotate" data-period="1000" data-rotate='[ 
+                            "Auvergne Rhône-alpes",
+                            "Nouvelle-Aquitaine",
+                            "Occitanie",
+                            "PACA"
+                            ]'></br>
+                </span>
+            </div>
+            <!--Fin utilisation de scriptText.js-->
+
+            <!--Logo-->
+            <div id="Logo">
+                <img src="https://loremflickr.com/320/240/paris,girl/all" alt="tof">
+            </div>
+            <!--Fin Logo-->
+
+            <!--Utilisation de awesome.js pour des picto-->
+            <div id="social" class="box-social-link">
+                <a href='https://github.com/tsudos' target='_blank'><i class="fab fa-github fa-1x "></i></a>
+                <a href='https://www.linkedin.com/in/stephane-dufour-6102b4b3/' target='_blank'><i
+                        class="fab fa-linkedin fa-1x"></i></a>
+                <a href='https://www.instagram.com/tsudos.des.iles/' target='_blank'><i
+                        class="fab fa-instagram fa-1x"></i></a>
+                <a href='https://www.facebook.com/Tsudos.des.iles' target='_blank'><i
+                        class="fab fa-facebook fa-1x "></i></a>
+                <a href='https://stephane-dufour.welovedevs.com/' target='_blank'><i class="fab fa-dev fa-1x"></i></a>
+            </div>
+            <!--Fin Utilisation de awesome.js pour des picto-->
+
+        </div>
+
+        <hr>
+
+        <!--utilisation de mailto.js-->
+        <div id="mailto">
+            <!--<a href="mailto:%64ufourstephane%2Edev%40gmail%2Ecom?subject=Contact%20à%20partir%20du%20site"><i class="fas fa-mail-bulk fa-1x"></i></a>-->
+            <!-- to create a mail of this type in "a": href="mailto:hello+from-another@domain.com" -->
+            <a class="js-MailTo" data-mailto-user="%64ufourstephane%2Edev" data-mailto-domain="gmail%2Ecom"
+                data-mailto-subject="?subject=Contact%20à%20partir%20du%20site"><i
+                    class="fas fa-mail-bulk fa-1x"></i><a />
+                <a class="cv" href="doc/20200325_CV_STEPH_Poste.pdf" target="_blank"><i
+                        class="fas fa-file-download fa-1x"></i><a />
+        </div>
+        <!--Fin utilisation de Mailto & cv-->
+
+        <hr>
+
+        <!--utilisation d'un script de date avec alert (pop-up)'-->
+        <script>
+            var maintenant = new Date();
+            alert(maintenant);
+            // methode get date : renvoi un nb entier correspondant au nbr du jours
+            var jour = maintenant.getDate();
+            // methode getMonth
+            var mois = maintenant.getMonth() + 1;
+            // methode getFullYear
+            var annee = maintenant.getFullYear();
+
+            var jSemaine = maintenant.getDay();
+
+            var strjSemaine = "";
+
+            switch (jSemaine) {
+                case 0: strjSemaine = "Dimanche"; break;
+                case 1: strjSemaine = "Lundi"; break;
+                case 2: strjSemaine = "Mardi"; break;
+                case 3: strjSemaine = "Mercredi"; break;
+                case 4: strjSemaine = "Jeudi"; break;
+                case 5: strjSemaine = "Vendredi"; break;
+                case 6: strjSemaine = "Samedi"; break;
+
+            }
+
+            document.writeln(strjSemaine + " " + jour + "/" + mois + "/" + annee);
+
+        </script>
+
+        <!--Fin utilisation d'un script de date avec alert (pop-up)'-->
+
+        <hr>
+
+        <div id="bloc">
+
+            <header>
+                <h1 class="title">Site exo1 JS Listener/DOM
+                </h1>
+
+                <h3>Quel est votre parfum de glace préféré ?
+                </h3>
+            </header>
+
+            <section>
+
+                <form>
+                    <div>
+                        <input type="radio" id="pistache" name="parfum" value="la Pistache">
+                        <label for="pistache">pistache</label>
+
+                        <input type="radio" id="Café" name="parfum" value="le Café" checked>
+                        <label for="Café">Café</label>
+
+                        <input type="radio" id="Vanille" name="parfum" value="la Vanille">
+                        <label for="Vanille">Vanille</label>
+
+                        <input type="radio" id="Chocolat" name="parfum" value="le Chocolat">
+                        <label for="Chocolat">Chocolat</label>
+                    </div>
+                    <div>
+                        <button type="button" name="popup" value="infoParfum" onclick="popupParfum()">Afficher la case à
+                            cocher</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <hr>
+
+        <!--Footer-->
+        <div class="footer">
+        </div>
+        <!--Fin Footer-->
+
+    </div>
+
+    <!--permet d'avoir des icones-->
+    <!--<script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+    <script src="script/awesome.js"></script>
+    <script src="script/scriptText.js"></script>
+    <script src="script/mailto.js"></script>
+    <script type="text/javascript" src="AddEventDOM1.Js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+</body>
+
+</html>
