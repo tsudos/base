@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*viewport*/
+@viewport {
+    width: device-width; /* largeur du viewport */
+    zoom: 1; /* zoom initial à 1.0  */
+}
+@-ms-viewport{
+    width: device-width;
+}
+@-o-viewport{
+    width: device-width;
+}
+
+/* micro reset */
+html, body, ul {
+padding: 0; margin: 0;
+}
+
+/*mise en place d'un patron de police pour changement de la taille en 1 fois !*/
+html {
+font-size:18px;
+}
+
+/* masquer les éléments superflus */
+
+.hide_mobile {
+display: none;
+}
+
+
+/*mise en page grid-layout*/
+
+/*page en grid pour header/content/footer dont header en grid pour logo/title/nav*/
+
+/* Global Layout */
+#Ma_Page {
+display: grid;
+}

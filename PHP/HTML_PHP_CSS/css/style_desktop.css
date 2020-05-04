@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*viewport*/
+@viewport {
+    width: device-width; /* largeur du viewport */
+    zoom: 1; /* zoom initial à 1.0  */
+}
+@-ms-viewport{
+    width: device-width;
+}
+@-o-viewport{
+    width: device-width;
+}
+
+/* micro reset */
+html, body, ul {
+    padding: 0; margin: 0;
+}
+
+/*mise en place d'un patron de police pour changement de la taille en 1 fois !*/
+html {
+    font-size:18px;
+}
+
+/* masquer les éléments superflus */
+
+.hide_desktop {
+    display: none;
+}
+
+
+/*mise en page grid-layout*/
+
+/*page en grid pour header/content/footer dont header en grid pour logo/title/nav*/
+
+/* Global Layout */
+#Ma_Page {
+    /* height:100vh; */
+    width:100vw;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(80px, 135px) 1fr 50px;
+    background-color: #97D1AB;
+}
+
+/*lien sociaux*/
+.box-social-link{
+    width:100%;
+    grid-column: 10/13;
+    text-align: center;
+    min-height: 100px;
+}
+
+.fab{
+    color: #FCF342;
+    margin: 1vh  0.4vh 1vh 0.4vh;
+    padding: 1vh ;
+    box-shadow:0px 0px 10px #0B120B;
+    border: 1px solid #0B120B;
+    border-radius: 5px;
+    background-color: rgba(11, 18, 11, 0.089);
+}
+.fab:hover{
+    color: #0B120B;
+    margin: 1vh  0.4vh 1vh 0.4vh;
+    padding: 1vh ;
+    border-radius: 5px;
+    box-shadow:0px 0px 50px #FCF342;
+}
+
+
+
+/*Logo*/
+#Logo   {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url('../images/57-Tatouage-tribal.eu-Tatouage-tete-de-mort-.jpg');
+    background-size: cover;
+    background-position : 50% 50%;
+    background-repeat: no-repeat;
+    width : 15vh; height : 15vh;
+    box-shadow:0px 0px 10px #0B120B;
+    border-radius:75px;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+#Logo:hover   {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url('../images/57-Tatouage-tribal.eu-Tatouage-tete-de-mort-.jpg');
+    background-size: cover;
+    background-position : 50% 50%;
+    background-repeat: no-repeat;
+    width : 15vh; height : 15vh ;
+    box-shadow:0px 0px 50px #FCF342;
+    border-radius:75px;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+
+
+/*Navigation*/
+.navigation
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+    grid-row: 1;
+    grid-column:4/10;
+}
+
+.navigation ul li  
+{
+    display:inline-block;   /* mise en ligne au lieu de colonne*/
+    background-color: rgba(11, 18, 11, 0.089);
+    border: 1px solid #0B120B;
+    color: #FCF342;
+    padding: 2vh;
+    margin: 1vh;
+    box-shadow:0px 0px 10px #0B120B;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.navigation ul li:hover {
+    color: #0B120B;
+    padding: 2vh;
+    margin: 1vh;
+    border-radius: 5px;
+    box-shadow:0px 0px 50px #FCF342;
+    font-weight: bold;
+}
+
+.navigation a:link {
+    text-decoration:none;	 /* enlever les puces*/
+    padding:10px;
+    color:#FCF342; 
+}
+
+.navigation a:visited {
+    text-decoration:none;	
+    color:#FCF342; 
+}
+
+.navigation a:hover {	
+    color:#0B120B; 
+    }
+
+
+.navigation a:active {
+    text-decoration:none;
+    color:#FCF342; 		
+}
+
+/*Main*/
+.Main_title{
+    grid-row: 2;
+    grid-column:1;
+}
+.Main_img_tatouage{
+    border-radius: 15px;
+    box-shadow:0px 0px 50px #FCF342;
+    grid-row: 2;
+    grid-column:10/13;
+}
+
+/*Footer*/
+.footer{
+    grid-column:1/13;
+    grid-row: 3;
+}
+
+/*animation*/
+.animation{
+    grid-column:2/4;
+    grid-row: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.animation p{
+    margin-bottom:0px;
+}
+
+.animation span{
+    color:#FCF342; 
+    margin-top:0px;
+}
+
+
+@media screen and (max-width:761px){
+    .animation{
+        font-size: 0.90rem;
+    }
+
+}
